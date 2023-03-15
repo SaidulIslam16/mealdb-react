@@ -1,9 +1,16 @@
 import React from 'react';
+import './Meal.css'
 
-const Meal = () => {
+const Meal = (props) => {
+    console.log(props.meal)
     return (
-        <div>
-            <h1>Hello from Meal</h1>
+        <div className='meal-container'>
+            <div className='meal-image'>
+                <img src={props.meal.strMealThumb} alt="" />
+            </div>
+            <div>
+                <h3>{props.meal.strMeal}</h3>
+            </div>
         </div>
     );
 };
