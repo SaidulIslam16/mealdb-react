@@ -11,14 +11,14 @@ const Main = () => {
     },[])
     // console.log(meals)
     return (
-        <div className='meal-container'>
+        <div className='main'>
             <div className='main-container'>
                 {
                     meals.map(meal=><Meal meal = {meal} key={meal.idMeal}></Meal>)
                 }
             </div>
             <div className='sidebar'>
-                <h1>side section</h1>
+                <h2>Order List</h2>
             </div>
         </div>
     );

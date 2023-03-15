@@ -1,7 +1,25 @@
 .meal-image img{
-    max-height: 200px;
+    max-height: 300px;
+    padding: 10px;
 }
 
 .meal-container{
+    /* border: 2px solid rgb(253, 229, 167); */
+    border-radius: 10px;
+}
+.meal-details{
+    padding: 0 10px;
+}
+
+.btn-addto-order{
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
     
+}
+
+.btn-addto-order:hover{
+    background-color: orangered;
 }

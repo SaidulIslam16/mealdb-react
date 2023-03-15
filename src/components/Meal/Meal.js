@@ -8,8 +8,14 @@ const Meal = (props) => {
             <div className='meal-image'>
                 <img src={props.meal.strMealThumb} alt="" />
             </div>
-            <div>
+            <div className='meal-details'>
                 <h3>{props.meal.strMeal}</h3>
+                <p>{(props.meal.strInstructions).slice(0, 100)}</p>
+            </div>
+            <div>
+                <button className='btn-addto-order'>
+                    <p>Add to Order List</p>
+                </button>
             </div>
         </div>
     );
