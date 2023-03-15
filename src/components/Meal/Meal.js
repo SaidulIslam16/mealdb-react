@@ -2,7 +2,7 @@ import React from 'react';
 import './Meal.css'
 
 const Meal = (props) => {
-    console.log(props.meal)
+    // console.log(props.meal)
     return (
         <div className='meal-container'>
             <div className='meal-image'>
@@ -13,7 +13,7 @@ const Meal = (props) => {
                 <p>{(props.meal.strInstructions).slice(0, 100)}</p>
             </div>
             <div>
-                <button className='btn-addto-order'>
+                <button className='btn-addto-order' onClick={()=>props.handleMenu(props.meal)}>
                     <p>Add to Order List</p>
                 </button>
             </div>
