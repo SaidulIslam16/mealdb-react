@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Meal from '../Meal/Meal';
+import OrderList from '../OrderList/OrderList';
 import './Main.css'
 
 const Main = () => {
@@ -26,18 +27,7 @@ const Main = () => {
                 }
             </div>
             <div className='sidebar'>
-                <h2>Order List</h2>
-                {
-                    selectedMeals.length>0 &&(
-                        <ol>
-                            {
-                                selectedMeals.map(
-                                    meal=><li>{meal.strMeal}</li>
-                                )
-                            }
-                        </ol>
-                    )
-                }
+                <OrderList selectedMeals = {selectedMeals}></OrderList>
             </div>
         </div>
     );
