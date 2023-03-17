@@ -52,13 +52,17 @@ const Main = () => {
         // }
     }
 
-    const handleDelete = () => {
-        console.log('hello')
-        // const updatedItems = [...items]; // create a copy of the items array
-        // updatedItems.splice(index, 1); // remove the item at the specified index
-        // setItems(updatedItems);
-        // set the state with the updated array
-      }
+    // const handleDelete = (index) => {
+    //     console.log(index, 'hello')
+    //     for (const item of index){
+    //         console.log(item)
+    //         const updatedItems = selectedMeals.filter(item=>item.idMeal !== index.idMeal);
+    //         console.log(updatedItems)
+    //     }
+        
+    //     // setSelectedMeal(updatedItems);
+    //     // set the state with the updated array
+    //   }
     // console.log(meals)
     return (
         <div className='main'>
@@ -68,7 +72,7 @@ const Main = () => {
                 }
             </div>
             <div className='sidebar'>
-                <OrderList selectedMeals = {selectedMeals} handleDelete = {handleDelete}></OrderList>
+                <OrderList selectedMeals = {selectedMeals}></OrderList>
             </div>
         </div>
     );

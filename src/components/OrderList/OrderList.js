@@ -1,7 +1,7 @@
 import React from 'react';
 import './OrderList.css'
 
-const OrderList = ({selectedMeals, handleDelete}) => {
+const OrderList = ({selectedMeals}) => {
     return (
         <div className='ordered-list'>
             <h2>Order List</h2>
@@ -11,7 +11,7 @@ const OrderList = ({selectedMeals, handleDelete}) => {
                         <ul>
                             {
                                 selectedMeals.map(
-                                    meal=><li className='list'>{meal.strMeal} {meal.count} <button className='delete-btn'onClick={()=>handleDelete()}>Delete</button></li>
+                                    meal=><li className='list'>{meal.strMeal} {meal.count}</li>
                                 )
                             }
                         </ul>
